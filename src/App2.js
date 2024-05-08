@@ -1,4 +1,4 @@
-import './App2.css';
+/*import './App2.css';
 import React, {useState} from 'react';
 
 const App2 = () => {
@@ -65,4 +65,32 @@ const App2 = () => {
     )
 }
    
-   export default App2;
+   export default App2;*/
+
+import React from 'react';
+import {useState} from 'react'
+
+const App2 = () => {
+    const [name, setName] = useState("swapnil");
+    const [age, setAge] = useState(23);
+
+    const updateName = () => {
+        setName("vrushabh");
+    }
+    const updateAge = () => {
+        setAge(24);
+    }
+    
+    return (
+        <div>
+            <p>Name: {name}</p>
+            <p>Age: {age}</p>
+            <button onClick={updateName}>Change Name</button>
+            <button onClick={updateAge}>Change Age</button>
+        </div>
+    )
+}
+
+export default App2;
+
+i

@@ -1,15 +1,9 @@
-
-
-
 import React from 'react';
-import {createRoot} from "react-dom/client";
+import {createRoot} from 'react-dom/client';
+import GetAllPost from './GetAllPost'
 
+const rootDiv = document.getElementById('root');
+const root = createRoot(rootDiv);
 
-import App2 from './App2';
-import './App2.css';
+root.render(<GetAllPost/>);
 
-
-let rootDiv = document.getElementById('root');
-let root = createRoot(rootDiv);
-
-root.render(<App2/>)
